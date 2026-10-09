@@ -1,0 +1,21 @@
+function getDir($path) {
+   if (!file_exists($path)) {
+       return [];
+   }
+   $files = scandir($path);
+   $fileItem = [];
+   foreach ($files as $v) {
+       $newPath = $path . DIRECTORY_SEPARATOR . $v;
+       if (is_dir($newPath) && $v != '.' && $v != '..') {
+           $fileItem = array_merge($fileItem, getDir($newPath));
+       } else if (is_file($newPath)) {
+           $fileItem[] = $newPath;
+       }
+   }
+   return $fileItem;
+}
+// 调用
+echo '遍历目录开始';
+$path = realpath('./m1/');
+var_dump(getDir($path));
+echo '遍历目录结束';

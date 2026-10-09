@@ -1,0 +1,11 @@
+web学习笔记：https://websec.readthedocs.io/zh/latest/vuln/sql/cheatsheet/mysql.html
+第三方寻找源码网站：https://zhuanlan.zhihu.com/p/15483859820
+cms指纹库：https://github.com/l2-team/cmsfingers
+cms识别平台（云悉）:https://www.yunsee.cn/
+黑暗引擎: soudan,zoomeye,fofa
+搜索是否有CDN：ping.chinaz.com
+寻找真实ip地址：get-site-ip.com
+第三方查询：https://x.threatbook.com/
+旁注查询：https://c.webscan.cc/
+mandb数据库注入：https://blog.csdn.net/qq_39936434/article/details/95319449
+sqlmap使用指南：https://www.cnblogs.com/bmjoker/p/9326258.html
